@@ -1,4 +1,5 @@
 using BancoColumbia.Api;
+using BancoColumbia.Api.Repositorios;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,8 +28,8 @@ namespace BancoColumbia
             var usuarioRepositorio = new UsuarioRepositorio();
             var contaBancariaRepositorio = new ContaBancariaRepositorio();
 
-            services.AddSingleton(typeof(UsuarioRepositorio), usuarioRepositorio);
-            services.AddSingleton(typeof(ContaBancariaRepositorio), contaBancariaRepositorio);
+            services.AddSingleton(typeof(IUsuarioRepositorio), usuarioRepositorio);
+            services.AddSingleton(typeof(IContaBancariaRepositorio), contaBancariaRepositorio);
             services.AddSingleton(typeof(CadastrarUsuarioExecutor), new CadastrarUsuarioExecutor(usuarioRepositorio));
             services.AddSingleton(typeof(CriarContaBancariaExecutor), new CriarContaBancariaExecutor(usuarioRepositorio, contaBancariaRepositorio));
 

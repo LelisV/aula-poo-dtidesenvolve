@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Zh2hnj1zP2bIkn0r4pXf23r0v4JCcZ7B/K0cKQ3m/2HFwd6Ygdtv8tix38o+7gcDW0Ss+DkqmnmP/GeSG46taA==",
+  "dgSpecHash": "6e9g4ZSG3GgCoaijOHHuWfJyO4ESYrtDQ/gPZV0OT53Mq7xNjlprtfnvzVMnl7nONpvpOup8g12up8lD7McZnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\194291\\source\\repos\\BancoColumbia\\BancoColumbia\\BancoColumbia.Api.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,8 @@
     "C:\\Users\\194291\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
     "C:\\Users\\194291\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
     "C:\\Users\\194291\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
-    "C:\\Users\\194291\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512"
+    "C:\\Users\\194291\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512",
+    "C:\\Users\\194291\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
   ],
   "logs": []
 }

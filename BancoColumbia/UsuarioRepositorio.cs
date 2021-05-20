@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using BancoColumbia.Api.Repositorios;
+using System.Collections.Generic;
 
 namespace BancoColumbia.Api
 {
-    public class UsuarioRepositorio
+    public class UsuarioRepositorio : IUsuarioRepositorio
     {
         // Base fictícia
         private List<Usuario> _usuarios;
@@ -30,6 +31,5 @@ namespace BancoColumbia.Api
         {
             _usuarios.Add(usuario);
         }
-
     }
 }

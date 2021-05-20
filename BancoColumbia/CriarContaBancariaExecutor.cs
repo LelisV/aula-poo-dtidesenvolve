@@ -1,4 +1,5 @@
 ﻿using BancoColumbia.Api.Excecoes;
+using BancoColumbia.Api.Repositorios;
 using System;
 
 namespace BancoColumbia.Api
@@ -6,10 +7,10 @@ namespace BancoColumbia.Api
     public class CriarContaBancariaExecutor
     {
 
-        private UsuarioRepositorio _usuarioRepositorio;
-        private ContaBancariaRepositorio _contaBancariaRepositorio;
+        private IUsuarioRepositorio _usuarioRepositorio;
+        private IContaBancariaRepositorio _contaBancariaRepositorio;
 
-        public CriarContaBancariaExecutor(UsuarioRepositorio usuarioRepositorio, ContaBancariaRepositorio contaBancariaRepositorio)
+        public CriarContaBancariaExecutor(IUsuarioRepositorio usuarioRepositorio, IContaBancariaRepositorio contaBancariaRepositorio)
         {
             _usuarioRepositorio = usuarioRepositorio;
             _contaBancariaRepositorio = contaBancariaRepositorio;

@@ -1,7 +1,3 @@
-C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.AssemblyInfoInputs.cache
-C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.AssemblyInfo.cs
-C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.csproj.CoreCompileInputs.cache
-C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\BancoColumbia.Api.exe
@@ -14,13 +10,17 @@ C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.AssemblyInfoInputs.cache
+C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.AssemblyInfo.cs
+C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.csproj.CoreCompileInputs.cache
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\staticwebassets\BancoColumbia.Api.StaticWebAssets.Manifest.cache
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\staticwebassets\BancoColumbia.Api.StaticWebAssets.xml
+C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\scopedcss\bundle\BancoColumbia.Api.styles.css
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.RazorTargetAssemblyInfo.cache
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.csproj.CopyComplete
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.dll
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.pdb
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.genruntimeconfig.cache
-C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\194291\source\repos\BancoColumbia\BancoColumbia\obj\Debug\netcoreapp3.1\BancoColumbia.Api.csprojAssemblyReference.cache
