@@ -3,5 +3,6 @@
     public interface IContaBancariaRepositorio
     {
         void SalvarContaBancaria(ContaBancaria contaBancaria);
+        ContaBancaria ObterConta(int numeroConta);
     }
 }

@@ -6,7 +6,7 @@ using Xunit;
 
 namespace BancoColumbia.Testes
 {
-    public class UnitTest1
+    public class CadastrarUsuario_Test
     {
         [Fact]
         public void Tentar_Cadastrar_Usuario_Ja_Existe()

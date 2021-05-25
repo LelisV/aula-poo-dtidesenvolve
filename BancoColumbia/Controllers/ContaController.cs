@@ -1,5 +1,7 @@
 ﻿using BancoColumbia.Api.Excecoes;
+using BancoColumbia.Api.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace BancoColumbia.Api.Controllers
 {
@@ -8,20 +10,20 @@ namespace BancoColumbia.Api.Controllers
     public class ContaController : ControllerBase
     {
 
-        private CriarContaBancariaExecutor _criarContaBancariaExecutor;
+        private AtualizarSaldoExecutor _atualizarSaldoExecutor;
 
-        public ContaController(CriarContaBancariaExecutor criarContaBancariaExecutor)
+        public ContaController(AtualizarSaldoExecutor atualizarSaldoExecutor)
         {
-            _criarContaBancariaExecutor = criarContaBancariaExecutor;
+            _atualizarSaldoExecutor = atualizarSaldoExecutor;
         }
 
         [HttpPost]
         [Route("{cpf}/corrente")]
-        public IActionResult CriarContaCorrente([FromRoute] string cpf)
+        public IActionResult CriarContaCorrente([FromServices] CriarContaBancariaExecutor criarContaBancariaExecutor, [FromRoute] string cpf)
         {
             try
             {
-                var contaCriada = _criarContaBancariaExecutor.CriarContaCorrente(cpf);
+                var contaCriada = criarContaBancariaExecutor.CriarContaCorrente(cpf);
 
                 // 201 -- recurso criado
                 return Created(string.Empty, contaCriada);
@@ -35,11 +37,11 @@ namespace BancoColumbia.Api.Controllers
 
         [HttpPost]
         [Route("{cpf}/poupanca")]
-        public IActionResult CriarContaPoupanca([FromRoute] string cpf)
+        public IActionResult CriarContaPoupanca([FromServices] CriarContaBancariaExecutor criarContaBancariaExecutor, [FromRoute] string cpf)
         {
             try
             {
-                var contaCriada = _criarContaBancariaExecutor.CriarContaPoupanca(cpf);
+                var contaCriada = criarContaBancariaExecutor.CriarContaPoupanca(cpf);
 
                 // 201 -- recurso criado
                 return Created(string.Empty, contaCriada);
@@ -51,5 +53,21 @@ namespace BancoColumbia.Api.Controllers
             }
         }
 
+        [HttpPatch]
+        [Route("{cpf}/saldo")]
+        public IActionResult AtualizarSaldoConta([FromRoute] string cpf, [FromBody] OperacaoContaBancariaModel model)
+        {
+            try
+            {
+                var operacaoContaBancaria = new OperacaoContaBancaria(model.NumeroConta, model.TipoOperacao, model.QuantidadeDinheiro, cpf);
+                var saldoAtualizado = _atualizarSaldoExecutor.AtualizarSaldo(operacaoContaBancaria);
+                return Accepted(saldoAtualizado);
+            }
+            catch (Exception exception)
+            {
+                // 400 -- Bad request
+                return BadRequest(exception.Message);
+            }
+        }
     }
 }

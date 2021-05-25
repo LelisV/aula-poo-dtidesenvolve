@@ -16,5 +16,8 @@ namespace BancoColumbia.Api
             Saldo = saldo;
             DataCriacao = dataCriacao;
         }
+
+        public abstract void Saque(decimal quantidade);
+        public abstract void Deposito(decimal quantidade);
     }
 }

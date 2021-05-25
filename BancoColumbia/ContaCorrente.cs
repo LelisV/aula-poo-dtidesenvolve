@@ -8,5 +8,15 @@ namespace BancoColumbia.Api
         {
 
         }
+
+        public override void Deposito(decimal quantidade)
+        {
+            Saldo += quantidade;
+        }
+
+        public override void Saque(decimal quantidade)
+        {
+            Saldo -= quantidade + Constantes.TAXA_SAQUE;
+        }
     }
 }

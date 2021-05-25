@@ -13,6 +13,11 @@ namespace BancoColumbia.Api
             _contasBancarias = new List<ContaBancaria>();
         }
 
+        public ContaBancaria ObterConta(int numeroConta)
+        {
+            return _contasBancarias.Find(conta => conta.Numero == numeroConta);
+        }
+
         public void SalvarContaBancaria(ContaBancaria contaBancaria)
         {
             _contasBancarias.Add(contaBancaria);

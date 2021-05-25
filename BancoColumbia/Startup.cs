@@ -32,6 +32,7 @@ namespace BancoColumbia
             services.AddSingleton(typeof(IContaBancariaRepositorio), contaBancariaRepositorio);
             services.AddSingleton(typeof(CadastrarUsuarioExecutor), new CadastrarUsuarioExecutor(usuarioRepositorio));
             services.AddSingleton(typeof(CriarContaBancariaExecutor), new CriarContaBancariaExecutor(usuarioRepositorio, contaBancariaRepositorio));
+            services.AddSingleton(typeof(AtualizarSaldoExecutor), new AtualizarSaldoExecutor(usuarioRepositorio, contaBancariaRepositorio));
 
             services.AddSwaggerGen(c =>
             {
